@@ -63,6 +63,10 @@ members:
     twitter: conio
     logo: conio.png
   -
+    name: Edge
+    twitter: edgewallet
+    logo: edge.png
+  -
     name: Electrum
     twitter: ElectrumWallet
     logo: electrum.png
