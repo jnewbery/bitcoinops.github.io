@@ -202,47 +202,36 @@ primary_sources:
 optech_mentions:
   - title: "Presentation: Blockchain design patterns: Layers and scaling approaches"
     url: /en/newsletters/2019/09/18/#blockchain-design-patterns-layers-and-scaling-approaches
-    date: 2019-09-18
 
   - title: "Taproot privacy gains, including those from signature adaptors"
     url: /en/newsletters/2020/02/19/#tap1
-    date: 2020-02-19
 
   - title: "Boomerang contracts using signature adaptors for LN latency & throughput"
     url: /en/newsletters/2020/02/26/#boomerang-redundancy-improves-latency-and-throughput-in-payment-channel-networks
-    date: 2020-02-26
 
   - title: ECDSA signature adaptors for statechains with secure multiparty computation
     url: /en/newsletters/2020/04/01/#implementing-statechains-without-schnorr-or-eltoo
-    date: 2020-04-01
 
   - title: Work on PTLCs for LN using simplified ECDSA signature adaptors
     url: /en/newsletters/2020/04/08/#work-on-ptlcs-for-ln-using-simplified-ecdsa-adaptor-signatures
-    date: 2020-04-08
 
   - title: Paying for a PTLC pointlock using an signature adaptors
     url: /en/newsletters/2020/06/24/#continued-discussion-about-ln-atomicity-attack
-    date: 2020-06-24
 
   - title: Multiparty ECDSA for scriptless LN channels
     url: /en/newsletters/2018/10/09/#multiparty-ecdsa-for-scriptless-lightning-network-payment-channels
-    date: 2018-10-09
 
   - title: Fast multiparty ECDSA compatible with signature adaptors
     url: /en/newsletters/2018/10/23/#two-papers-published-on-fast-multiparty-ecdsa
-    date: 2018-10-23
 
   - title: Discussion about problems in LN solvable using signature adaptors
     url: /en/newsletters/2018/11/06/#discussion-about-improving-lightning-payments
-    date: 2018-11-06
 
   - title: libsecp256k1-zkp library updated with support for signature adaptors
     url: /en/newsletters/2019/02/26/#schnorr-ready-fork-of-libsecp256k1-available
-    date: 2019-02-26
 
   - title: "Q&A: what's the difference between taproot and signature adaptors?"
     url: /en/newsletters/2019/02/26/#taproot-and-scriptless-scripts-both-use-schnorr-but-how-are-they-different
-    date: 2019-02-26
 
 ## Optional.  Same format as "primary_sources" above
 see_also:
