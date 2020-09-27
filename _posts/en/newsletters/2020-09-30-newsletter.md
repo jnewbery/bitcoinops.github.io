@@ -22,10 +22,10 @@ popular Bitcoin infrastructure software.
 - **Discussion about compiler bugs:** a [test][oconnor test] written
   last week by Russell O'Connor for libsecp256k1 failed due to a
   [bug][gcc bug] in the GNU C Compiler's (GCC's) built-in version of the
-  standard `memcmp` function.  This function takes two regions of memory
-  and compares them, returning whether the first region would be less
-  than, equal to, or greater than the second region if they were both
-  integer values.  This is a commonly used low-level function.
+  standard `memcmp` (memory compare) function.  This function takes two
+  regions of memory, interprets them as integer values, and returns
+  whether the first region is less than, equal to, or greater than the
+  second region.  This is a commonly used low-level function.
   Programs are almost never designed to verify such fundamental
   operations were performed correctly, so bugs of this type can easily
   result in a program producing incorrect results.  Those incorrect
@@ -78,7 +78,7 @@ release candidates.*
 FIXME:harding-to-update-tuesday
 
 - [LND 0.11.1-beta.rc4][lnd 0.11.1-beta] is the release candidate for a
-  minor version.  Its release notes summarize its changes as, "a number
+  minor version.  Its release notes summarize the changes as "a number
   of reliability improvements, some macaroon [authentication token]
   upgrades, and a change to make our version of [anchor commitments][topic
   anchor outputs] spec compliant."
@@ -118,7 +118,7 @@ FIXME:harding-to-update-tuesday
   and contain exactly the same witness info as the legacy payloads, only
   requiring light modifications to the reconstruction logic."
 
-- [BIPs #907][] updates the [BIP155][] specification off [version 2 `addr`
+- [BIPs #907][] updates the [BIP155][] specification of [version 2 `addr`
   messages][topic addr v2] to allow addresses up to 512 bytes and adds a new
   `sendaddrv2` message that nodes can use to signal that they want to
   receive `addrv2` messages.
