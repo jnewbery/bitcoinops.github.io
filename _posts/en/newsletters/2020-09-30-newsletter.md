@@ -21,8 +21,8 @@ popular Bitcoin infrastructure software.
 
 - **Discussion about compiler bugs:** a [test][oconnor test] written
   last week by Russell O'Connor for libsecp256k1 failed due to a
-  [bug][gcc bug] in the GNU C Compiler's (GCC's) built-in version of the
-  standard `memcmp` (memory compare) function.  This function takes two
+  [bug][gcc bug] in the GNU Compiler Collection's (GCC's) built-in version of the
+  standard C library's `memcmp` (memory compare) function.  This function takes two
   regions of memory, interprets them as integer values, and returns
   whether the first region is less than, equal to, or greater than the
   second region.  This is a commonly used low-level function.
@@ -48,9 +48,7 @@ popular Bitcoin infrastructure software.
     [Bitcoin Core][bitcoin core #20005] repositories to find and
     mitigate any effects of this bug.  The topic was also
     [discussed][irc memcmp] during the weekly Bitcoin Core Developers
-    Meeting.  More broadly, Pieter Wuille [asked][wuille tweet] for
-    suggestions about a "process that can give assurances for correct
-    software in the presence of that [class of problem]".
+    Meeting.
 
     As of this writing, we're unaware of any serious Bitcoin-related
     problems that are the result of this bug---but developers are still
@@ -126,7 +124,6 @@ FIXME:harding-to-update-tuesday
 {% include references.md %}
 {% include linkers/issues.md issues="18267,19993,19572,4068,4078,1501,4576,907,823,20005" %}
 [lnd 0.11.1-beta]: https://github.com/lightningnetwork/lnd/releases/tag/v0.11.1-beta.rc4
-[wuille tweet]: https://twitter.com/pwuille/status/1308835425872642055
 [oconnor test]: https://github.com/bitcoin-core/secp256k1/pull/822#issuecomment-696790289
 [gcc bug]: https://gcc.gnu.org/bugzilla/show_bug.cgi?id=95189
 [maxwell systems]: https://github.com/bitcoin-core/secp256k1/issues/823#issuecomment-697527564
